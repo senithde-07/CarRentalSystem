@@ -138,5 +138,16 @@ namespace CarRentalSystem.Admin
                 }
             }
         }
+
+        private void dgvcustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcusID.Text = dgvcustomer.CurrentRow.Cells[0].Value.ToString();
+            txtcusfname.Text = dgvcustomer.CurrentRow.Cells[1].Value.ToString();
+            txtcusLname.Text = dgvcustomer.CurrentRow.Cells[2].Value.ToString();
+            txtcusaddress.Text = dgvcustomer.CurrentRow.Cells[3].Value.ToString();
+            txtcusnic.Text = dgvcustomer.CurrentRow.Cells[4].Value.ToString();
+            txtcusphoneno.Text = dgvcustomer.CurrentRow.Cells[5].Value.ToString();
+            txtcuslicenceno.Text = dgvcustomer.CurrentRow.Cells[6].Value.ToString();
+        } 
     }
 }

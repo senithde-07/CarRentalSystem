@@ -71,13 +71,13 @@ namespace CarRentalSystem.Admin
 
         private void dgvAddcashier_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtcashID.Text = dgvAddcashier.SelectedRows[0].Cells[0].Value.ToString();
-            txtcashfname.Text = dgvAddcashier.SelectedRows[0].Cells[1].Value.ToString();
-            txtcashLname.Text = dgvAddcashier.SelectedRows[0].Cells[2].Value.ToString();
-            txtcashaddress.Text = dgvAddcashier.SelectedRows[0].Cells[3].Value.ToString();
-            txtcashphoneno.Text = dgvAddcashier.SelectedRows[0].Cells[4].Value.ToString();
-            txtcashnic.Text = dgvAddcashier.SelectedRows[0].Cells[5].Value.ToString();
-            txtcashpassword.Text = dgvAddcashier.SelectedRows[0].Cells[6].Value.ToString();
+            txtcashID.Text = dgvAddcashier.CurrentRow.Cells[0].Value.ToString();
+            txtcashfname.Text = dgvAddcashier.CurrentRow.Cells[1].Value.ToString();
+            txtcashLname.Text = dgvAddcashier.CurrentRow.Cells[2].Value.ToString();
+            txtcashaddress.Text = dgvAddcashier.CurrentRow.Cells[3].Value.ToString();
+            txtcashphoneno.Text = dgvAddcashier.CurrentRow.Cells[4].Value.ToString();
+            txtcashnic.Text = dgvAddcashier.CurrentRow.Cells[5].Value.ToString();
+            txtcashpassword.Text = dgvAddcashier.CurrentRow.Cells[6].Value.ToString();
 
         }
 

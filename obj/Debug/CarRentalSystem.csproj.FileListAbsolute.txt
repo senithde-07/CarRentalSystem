@@ -22,3 +22,4 @@ C:\Users\ACER\Desktop\CarRentalSystem\obj\Debug\CarRentalSystem.Cashier.PaymentM
 C:\Users\ACER\Desktop\CarRentalSystem\obj\Debug\CarRentalSystem.CommonUI.Splash.resources
 C:\Users\ACER\Desktop\CarRentalSystem\obj\Debug\CarRentalSystem.Cashier.CustomerInvoice.resources
 C:\Users\ACER\Desktop\CarRentalSystem\obj\Debug\CarRentalSystem.Cashier.returncar.resources
+C:\Users\ACER\Desktop\CarRentalSystem\obj\Debug\CarRentalSystem.Cashier.returninvoice.resources

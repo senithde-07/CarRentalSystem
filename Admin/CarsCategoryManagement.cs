@@ -70,10 +70,11 @@ namespace CarRentalSystem.Admin
         }
 
         private void dgvcarctg_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
         {
-            txtID.Text = dgvcarctg.SelectedRows[0].Cells[0].Value.ToString();
-            txtctg.Text = dgvcarctg.SelectedRows[0].Cells[1].Value.ToString();
-            txtdesc.Text = dgvcarctg.SelectedRows[0].Cells[2].Value.ToString();
+            txtID.Text = dgvcarctg.CurrentRow.Cells[0].Value.ToString();
+            txtctg.Text = dgvcarctg.CurrentRow.Cells[1].Value.ToString();
+            txtdesc.Text = dgvcarctg.CurrentRow.Cells[2].Value.ToString();
         }
 
         private void Cars_Category_Management_Load(object sender, EventArgs e)

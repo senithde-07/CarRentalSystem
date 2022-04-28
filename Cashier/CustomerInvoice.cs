@@ -31,6 +31,8 @@ namespace CarRentalSystem.Cashier
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             Date = DateTime.Now.ToString("M/d/yyyy");
+           
+            
             
             
         }
@@ -56,14 +58,49 @@ namespace CarRentalSystem.Cashier
             pnl.DrawToBitmap(memoryimg,new Rectangle(0,0,pnl.Width,pnl.Height));
         }
 
-        
+        private void carctg()
+        {
+            Con.Open();
+            string query = "select * from caraddTbl where Id = " + txtinvoicecarid.Text.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                txtinvoicecarctg.Text = dr["Carctg"].ToString();
+            }
+            Con.Close();
+        }
+
+        /*private void cusphone()
+        {
+            Con.Open();
+            string query = "select * from customerTbl where Fname = " + txtinvoicecusname.SelectedText + "";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                txtinvoicecusphone.Text = dr["Phone"].ToString();
+            }
+            Con.Close();
+        }*/
 
 
-        public string  Date,CusName ,rentid,carid,carmodel,days,dailyprice,total,cash,balance,cusphone,cashiername;
+
+
+
+
+
+        public string  Date,CusName ,rentid,carid,carmodel,days,dailyprice,total,cash,balance,cashiername,invoiceno,returndate;
         
 
         private void CustomerInvoice_Load(object sender, EventArgs e)
         {
+           
+            textBox1.Text=invoiceno;
             textBox2.Text = Date;
             txtinvoicecusname.Text = CusName;
             txtinvoicerentid.Text = rentid;
@@ -72,10 +109,13 @@ namespace CarRentalSystem.Cashier
             txtinvoicedays.Text = days;
             txtinvoicedailyprice.Text = dailyprice;
             txtinvoiceamount.Text = total;
+            returndate2.Text = returndate;
             txtinvoicetotal.Text = total;
             txtinvoicecash.Text = cash;
             txtinvoicebalancce.Text = balance;
-            //txtinvoicecusphone.Text = cusphone;
+            
+
+
         }
 
         private void label24_Click(object sender, EventArgs e)
@@ -111,6 +151,10 @@ namespace CarRentalSystem.Cashier
 
         private void panelPrint_Paint(object sender, PaintEventArgs e)
         {
+            txtinvoicecashiername.Text = CommonUI.Login.CashierName;
+            carctg();
+            //cusphone();
+
 
         }
 

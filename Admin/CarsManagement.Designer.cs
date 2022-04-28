@@ -90,8 +90,9 @@
             this.panel1.Controls.Add(this.lbl8);
             this.panel1.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1256, 445);
+            this.panel1.Size = new System.Drawing.Size(1256, 446);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -101,16 +102,17 @@
             this.comboavailable.Items.AddRange(new object[] {
             "YES",
             "NO"});
-            this.comboavailable.Location = new System.Drawing.Point(766, 29);
+            this.comboavailable.Location = new System.Drawing.Point(931, 44);
+            this.comboavailable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboavailable.Name = "comboavailable";
-            this.comboavailable.Size = new System.Drawing.Size(126, 39);
+            this.comboavailable.Size = new System.Drawing.Size(127, 39);
             this.comboavailable.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(626, 32);
+            this.label1.Location = new System.Drawing.Point(792, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 36);
             this.label1.TabIndex = 22;
@@ -130,7 +132,8 @@
             // txtcarid
             // 
             this.txtcarid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcarid.Location = new System.Drawing.Point(235, 109);
+            this.txtcarid.Location = new System.Drawing.Point(235, 110);
+            this.txtcarid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcarid.Multiline = true;
             this.txtcarid.Name = "txtcarid";
             this.txtcarid.Size = new System.Drawing.Size(277, 38);
@@ -140,7 +143,7 @@
             // 
             this.lblid.AutoSize = true;
             this.lblid.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblid.Location = new System.Drawing.Point(22, 109);
+            this.lblid.Location = new System.Drawing.Point(21, 110);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(77, 36);
             this.lblid.TabIndex = 19;
@@ -149,7 +152,8 @@
             // txtcolour
             // 
             this.txtcolour.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcolour.Location = new System.Drawing.Point(782, 285);
+            this.txtcolour.Location = new System.Drawing.Point(781, 286);
+            this.txtcolour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcolour.Multiline = true;
             this.txtcolour.Name = "txtcolour";
             this.txtcolour.Size = new System.Drawing.Size(277, 38);
@@ -159,7 +163,7 @@
             // 
             this.lblcolour.AutoSize = true;
             this.lblcolour.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcolour.Location = new System.Drawing.Point(569, 285);
+            this.lblcolour.Location = new System.Drawing.Point(569, 286);
             this.lblcolour.Name = "lblcolour";
             this.lblcolour.Size = new System.Drawing.Size(83, 36);
             this.lblcolour.TabIndex = 17;
@@ -168,7 +172,8 @@
             // txtengcap
             // 
             this.txtengcap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtengcap.Location = new System.Drawing.Point(782, 228);
+            this.txtengcap.Location = new System.Drawing.Point(781, 228);
+            this.txtengcap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtengcap.Multiline = true;
             this.txtengcap.Name = "txtengcap";
             this.txtengcap.Size = new System.Drawing.Size(277, 38);
@@ -187,7 +192,8 @@
             // txtcarno
             // 
             this.txtcarno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcarno.Location = new System.Drawing.Point(782, 170);
+            this.txtcarno.Location = new System.Drawing.Point(781, 170);
+            this.txtcarno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcarno.Multiline = true;
             this.txtcarno.Name = "txtcarno";
             this.txtcarno.Size = new System.Drawing.Size(277, 38);
@@ -207,6 +213,7 @@
             // 
             this.txtinsuranceno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtinsuranceno.Location = new System.Drawing.Point(235, 282);
+            this.txtinsuranceno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtinsuranceno.Multiline = true;
             this.txtinsuranceno.Name = "txtinsuranceno";
             this.txtinsuranceno.Size = new System.Drawing.Size(277, 38);
@@ -216,7 +223,7 @@
             // 
             this.lblinsuranceno.AutoSize = true;
             this.lblinsuranceno.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinsuranceno.Location = new System.Drawing.Point(22, 282);
+            this.lblinsuranceno.Location = new System.Drawing.Point(21, 282);
             this.lblinsuranceno.Name = "lblinsuranceno";
             this.lblinsuranceno.Size = new System.Drawing.Size(158, 36);
             this.lblinsuranceno.TabIndex = 11;
@@ -226,6 +233,7 @@
             // 
             this.txtdaliyprice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtdaliyprice.Location = new System.Drawing.Point(284, 223);
+            this.txtdaliyprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtdaliyprice.Multiline = true;
             this.txtdaliyprice.Name = "txtdaliyprice";
             this.txtdaliyprice.Size = new System.Drawing.Size(228, 38);
@@ -235,7 +243,7 @@
             // 
             this.lbldaliyprice.AutoSize = true;
             this.lbldaliyprice.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldaliyprice.Location = new System.Drawing.Point(22, 225);
+            this.lbldaliyprice.Location = new System.Drawing.Point(21, 225);
             this.lbldaliyprice.Name = "lbldaliyprice";
             this.lbldaliyprice.Size = new System.Drawing.Size(122, 36);
             this.lbldaliyprice.TabIndex = 9;
@@ -244,9 +252,10 @@
             // comboBoxcarcatgerory
             // 
             this.comboBoxcarcatgerory.FormattingEnabled = true;
-            this.comboBoxcarcatgerory.Location = new System.Drawing.Point(234, 168);
+            this.comboBoxcarcatgerory.Location = new System.Drawing.Point(235, 167);
+            this.comboBoxcarcatgerory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxcarcatgerory.Name = "comboBoxcarcatgerory";
-            this.comboBoxcarcatgerory.Size = new System.Drawing.Size(278, 39);
+            this.comboBoxcarcatgerory.Size = new System.Drawing.Size(279, 39);
             this.comboBoxcarcatgerory.TabIndex = 8;
             this.comboBoxcarcatgerory.SelectedIndexChanged += new System.EventHandler(this.comboBoxcarcatgerory_SelectedIndexChanged);
             // 
@@ -257,7 +266,8 @@
             this.btncarmanDELETE.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncarmanDELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncarmanDELETE.ForeColor = System.Drawing.Color.Black;
-            this.btncarmanDELETE.Location = new System.Drawing.Point(654, 366);
+            this.btncarmanDELETE.Location = new System.Drawing.Point(653, 366);
+            this.btncarmanDELETE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncarmanDELETE.Name = "btncarmanDELETE";
             this.btncarmanDELETE.Size = new System.Drawing.Size(176, 46);
             this.btncarmanDELETE.TabIndex = 7;
@@ -272,6 +282,7 @@
             this.btncarmanUPDATE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncarmanUPDATE.ForeColor = System.Drawing.Color.Black;
             this.btncarmanUPDATE.Location = new System.Drawing.Point(444, 366);
+            this.btncarmanUPDATE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncarmanUPDATE.Name = "btncarmanUPDATE";
             this.btncarmanUPDATE.Size = new System.Drawing.Size(176, 46);
             this.btncarmanUPDATE.TabIndex = 7;
@@ -285,7 +296,8 @@
             this.btncarmanCLEAR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncarmanCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncarmanCLEAR.ForeColor = System.Drawing.Color.Black;
-            this.btncarmanCLEAR.Location = new System.Drawing.Point(234, 366);
+            this.btncarmanCLEAR.Location = new System.Drawing.Point(235, 366);
+            this.btncarmanCLEAR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncarmanCLEAR.Name = "btncarmanCLEAR";
             this.btncarmanCLEAR.Size = new System.Drawing.Size(176, 46);
             this.btncarmanCLEAR.TabIndex = 7;
@@ -300,6 +312,7 @@
             this.btncarmanADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncarmanADD.ForeColor = System.Drawing.Color.Black;
             this.btncarmanADD.Location = new System.Drawing.Point(27, 366);
+            this.btncarmanADD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncarmanADD.Name = "btncarmanADD";
             this.btncarmanADD.Size = new System.Drawing.Size(176, 46);
             this.btncarmanADD.TabIndex = 7;
@@ -310,7 +323,8 @@
             // txtcarname
             // 
             this.txtcarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcarname.Location = new System.Drawing.Point(782, 111);
+            this.txtcarname.Location = new System.Drawing.Point(781, 111);
+            this.txtcarname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcarname.Multiline = true;
             this.txtcarname.Name = "txtcarname";
             this.txtcarname.Size = new System.Drawing.Size(277, 38);
@@ -343,7 +357,7 @@
             this.lbl8.BackColor = System.Drawing.Color.Black;
             this.lbl8.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl8.ForeColor = System.Drawing.Color.White;
-            this.lbl8.Location = new System.Drawing.Point(18, 18);
+            this.lbl8.Location = new System.Drawing.Point(19, 18);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(290, 50);
             this.lbl8.TabIndex = 4;
@@ -367,6 +381,7 @@
             this.dgvcarmangement.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvcarmangement.GridColor = System.Drawing.Color.Black;
             this.dgvcarmangement.Location = new System.Drawing.Point(61, 465);
+            this.dgvcarmangement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvcarmangement.Name = "dgvcarmangement";
             this.dgvcarmangement.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -381,8 +396,9 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvcarmangement.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvcarmangement.RowTemplate.Height = 24;
-            this.dgvcarmangement.Size = new System.Drawing.Size(1130, 408);
+            this.dgvcarmangement.Size = new System.Drawing.Size(1131, 409);
             this.dgvcarmangement.TabIndex = 7;
+            this.dgvcarmangement.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcarmangement_CellContentClick);
             // 
             // Cars_Management
             // 
@@ -391,6 +407,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dgvcarmangement);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cars_Management";
             this.Size = new System.Drawing.Size(1256, 886);
             this.Load += new System.EventHandler(this.Cars_Management_Load);

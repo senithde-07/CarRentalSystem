@@ -172,5 +172,18 @@ namespace CarRentalSystem.Admin
         {
 
         }
+
+        private void dgvcarmangement_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcarid.Text = dgvcarmangement.CurrentRow.Cells[0].Value.ToString();
+            txtcarname.Text = dgvcarmangement.CurrentRow.Cells[1].Value.ToString();
+            txtcarno.Text = dgvcarmangement.CurrentRow.Cells[2].Value.ToString();
+            comboBoxcarcatgerory.Text = dgvcarmangement.CurrentRow.Cells[3].Value.ToString();
+            txtdaliyprice.Text = dgvcarmangement.CurrentRow.Cells[4].Value.ToString();
+            txtengcap.Text = dgvcarmangement.CurrentRow.Cells[5].Value.ToString();
+            txtinsuranceno.Text = dgvcarmangement.CurrentRow.Cells[6].Value.ToString();
+            txtcolour.Text = dgvcarmangement.CurrentRow.Cells[7].Value.ToString();
+            comboavailable.Text = dgvcarmangement.CurrentRow.Cells[8].Value.ToString();
+        }
     }
 }

@@ -282,9 +282,9 @@
             this.lbl10.ForeColor = System.Drawing.Color.White;
             this.lbl10.Location = new System.Drawing.Point(18, 18);
             this.lbl10.Name = "lbl10";
-            this.lbl10.Size = new System.Drawing.Size(213, 50);
+            this.lbl10.Size = new System.Drawing.Size(349, 50);
             this.lbl10.TabIndex = 4;
-            this.lbl10.Text = "Add Cashiers";
+            this.lbl10.Text = "Cashiers Management";
             // 
             // dgvAddcashier
             // 

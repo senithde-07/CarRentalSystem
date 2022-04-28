@@ -79,7 +79,7 @@
             this.panel1.Controls.Add(this.lblfname);
             this.panel1.Controls.Add(this.lbl10);
             this.panel1.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1256, 445);
             this.panel1.TabIndex = 2;
@@ -320,6 +320,7 @@
             this.dgvcustomer.RowTemplate.Height = 24;
             this.dgvcustomer.Size = new System.Drawing.Size(1002, 408);
             this.dgvcustomer.TabIndex = 7;
+            this.dgvcustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcustomer_CellContentClick);
             // 
             // Cusomers_Management
             // 

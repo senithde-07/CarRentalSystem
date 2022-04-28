@@ -20,7 +20,9 @@ namespace CarRentalSystem.Cashier
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ACER\Desktop\CarRentalSystem\CarRentalSystemDB.mdf;Integrated Security=True;Connect Timeout=30");
 
-        public static object SelectItems { get; internal set; }
+        //public static object SelectItems { get; internal set; }
+
+        
 
         private void rentalID()
         {
@@ -52,6 +54,7 @@ namespace CarRentalSystem.Cashier
                 textBox2.Text = dr["carname"].ToString();
                 textBox3.Text = dr["days"].ToString();
                 textBox5.Text = dr["carid"].ToString();
+                returndate1.Text = dr["returndate"].ToString();
             }
             Con.Close();
         }
@@ -101,6 +104,7 @@ namespace CarRentalSystem.Cashier
             
 
 
+
         }
 
         private void comboBoxrentId_SelectedIndexChanged(object sender, EventArgs e)
@@ -128,7 +132,7 @@ namespace CarRentalSystem.Cashier
                 try
                 {
                     Con.Open();
-                    string query = "insert into paymentTbl values ('"+ txtinvoiveno.Text+ "'," + comboBoxrentId.SelectedValue.ToString() + ",'" + textBox5.Text + "','" + textBox2.Text + "','" + txtrentcus.Text + "','" + textBox3.Text + "','" + txtdailyprice.Text + "','" + txttotal.Text + "','" + txtcash.Text + "','" + textbalance.Text + "')";
+                    string query = "insert into paymentTbl values ('"+ txtinvoiveno.Text+ "'," + comboBoxrentId.SelectedValue.ToString() + ",'" + textBox5.Text + "','" + textBox2.Text + "','" + txtrentcus.Text + "','" + textBox3.Text + "','" + txtdailyprice.Text + "','" + returndate1.Text + "','" + txttotal.Text + "','" + txtcash.Text + "','" + textbalance.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Payment Successfully !");
@@ -140,9 +144,7 @@ namespace CarRentalSystem.Cashier
                 {
                     MessageBox.Show(myex.Message);
                 }
-                //Cashier.paymentsuccessfulmsg objlogout = new Cashier.paymentsuccessfulmsg();
-                //MessageBox.Show("Payment Successfully !");
-                //objlogout.Show();
+                
             }
                 
         }
@@ -191,12 +193,14 @@ namespace CarRentalSystem.Cashier
             else
             {
                 Cashier.CustomerInvoice invoice = new Cashier.CustomerInvoice();
+                invoice.invoiceno = txtinvoiveno.Text;
                 invoice.CusName = txtrentcus.Text;
                 invoice.rentid = comboBoxrentId.Text;
                 invoice.carid = textBox5.Text;
                 invoice.carmodel = textBox2.Text;
                 invoice.days = textBox3.Text;
                 invoice.dailyprice = txtdailyprice.Text;
+                invoice.returndate = returndate1.Text;
                 invoice.total = txttotal.Text;
                 invoice.cash = txtcash.Text;
                 invoice.balance = textbalance.Text;
@@ -213,6 +217,7 @@ namespace CarRentalSystem.Cashier
 
         private void clear()
         {
+            txtinvoiveno.Clear();
             txttotal.Clear();
             txtcash.Clear();
             textbalance.Clear();
@@ -220,7 +225,7 @@ namespace CarRentalSystem.Cashier
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (txttotal.Text == "" || txtcash.Text == "" || textbalance.Text == "")
+            if (txtinvoiveno.Text == "" || txttotal.Text == "" || txtcash.Text == "" || textbalance.Text == "")
             {
                 MessageBox.Show("Select the RentalId !!!");
             }
@@ -229,7 +234,7 @@ namespace CarRentalSystem.Cashier
                 try
                 {
                     Con.Open();
-                    string query = "delete from paymentTbl where rentalid=" + comboBoxrentId.SelectedValue.ToString() + ";";
+                    string query = "delete from paymentTbl where invoiceno=" + txtinvoiveno.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Deleted Successfully");
@@ -254,9 +259,10 @@ namespace CarRentalSystem.Cashier
             txtrentcus.Text = dgvpayment.CurrentRow.Cells[4].Value.ToString();
             textBox3.Text = dgvpayment.CurrentRow.Cells[5].Value.ToString();
             txtdailyprice.Text = dgvpayment.CurrentRow.Cells[6].Value.ToString();
-            txttotal.Text = dgvpayment.CurrentRow.Cells[7].Value.ToString();
-            txtcash.Text = dgvpayment.CurrentRow.Cells[8].Value.ToString();
-            textbalance.Text = dgvpayment.CurrentRow.Cells[9].Value.ToString();
+            returndate1.Text = dgvpayment.CurrentRow.Cells[7].Value.ToString();
+            txttotal.Text = dgvpayment.CurrentRow.Cells[8].Value.ToString();
+            txtcash.Text = dgvpayment.CurrentRow.Cells[9].Value.ToString();
+            textbalance.Text = dgvpayment.CurrentRow.Cells[10].Value.ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)

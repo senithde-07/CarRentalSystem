@@ -24,7 +24,7 @@ namespace CarRentalSystem.Cashier
         public void available()
         {
             Con.Open();
-            string query = "select * from caraddTbl where Available = '"+"YES"+"'";
+            string query = "select * from caraddTbl where Available = '" + "YES" + "'";
             SqlDataAdapter da = new SqlDataAdapter(query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(da);
             var ds = new DataSet();
@@ -36,39 +36,54 @@ namespace CarRentalSystem.Cashier
         private void Cars_Report_Load(object sender, EventArgs e)
         {
             available();
-            fillcombo();
-      
-
 
         }
 
         private void btnrefresh_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void comboBoxcarsearch_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            
-            
+
+
         }
 
-        private void fillcombo()
+
+
+        private void txtreportctg_TextChanged(object sender, EventArgs e)
         {
-            Con.Open();
-            string query = "select  ctgname from carctgTbl ";
-            SqlCommand cmd = new SqlCommand(query, Con);
-            SqlDataReader rdr;
-            rdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("ctgname", typeof(string));
-            dt.Load(rdr);
-            comboBoxcarsearch.ValueMember = "ctgname";
-            comboBoxcarsearch.DataSource = dt;
+            if (txtreportctg.Text == "")
+            {
+                available();
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "select Id as 'CarID', Carname as 'CarName' , Carctg as 'CarCtg' , Carno as 'CarNo' , Dailyprice as 'DailyPrice , Engcap as 'EngCap' , Insuranceno as 'InsuranceNo' , Colour as 'COlour'  from caraddTbl where Id like '" + txtreportctg + "%'";
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, Con);
+                    DataTable dt = new DataTable();
+                    dataAdapter.Fill(dt);
+                    dgvcarmangement.DataSource = dt;
+                }
+                catch
+                {
+                    MessageBox.Show("Error!");
+                }
+                finally
+                {
+                    Con.Close();
+                }
+            }
+        }
 
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
-            Con.Close();
         }
     }
 }

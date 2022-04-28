@@ -1,6 +1,6 @@
 ﻿namespace CarRentalSystem.Cashier
 {
-    partial class CustomerInvoice
+    partial class returninvoice
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerInvoice));
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(returninvoice));
             this.panelPrint = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -53,29 +50,23 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.txtinvoicebalancce = new System.Windows.Forms.TextBox();
+            this.txtreturnbalancce = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtinvoicecash = new System.Windows.Forms.TextBox();
+            this.txtreturncash = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.txtinvoicetotal = new System.Windows.Forms.TextBox();
+            this.txtreturn1total = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.txtinvoiceamount = new System.Windows.Forms.TextBox();
-            this.txtinvoicedailyprice = new System.Windows.Forms.TextBox();
-            this.txtinvoicedays = new System.Windows.Forms.TextBox();
-            this.txtinvoicecarname = new System.Windows.Forms.TextBox();
-            this.txtinvoicecarctg = new System.Windows.Forms.TextBox();
-            this.txtinvoicecarid = new System.Windows.Forms.TextBox();
-            this.txtinvoicerentid = new System.Windows.Forms.TextBox();
+            this.txtreturntotal = new System.Windows.Forms.TextBox();
+            this.txtdelayfee = new System.Windows.Forms.TextBox();
+            this.txtdelaydates = new System.Windows.Forms.TextBox();
+            this.txtreturncarname = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -95,11 +86,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtinvoicecusphone = new System.Windows.Forms.TextBox();
-            this.txtinvoicecusname = new System.Windows.Forms.TextBox();
+            this.txtreturncusname = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.returndate2 = new System.Windows.Forms.DateTimePicker();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelPrint.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -108,27 +100,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load_1);
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
             // panelPrint
             // 
             this.panelPrint.BackColor = System.Drawing.Color.White;
             this.panelPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelPrint.Controls.Add(this.returndate2);
-            this.panelPrint.Controls.Add(this.label42);
             this.panelPrint.Controls.Add(this.label40);
             this.panelPrint.Controls.Add(this.label39);
             this.panelPrint.Controls.Add(this.label38);
@@ -148,29 +123,23 @@
             this.panelPrint.Controls.Add(this.label30);
             this.panelPrint.Controls.Add(this.label29);
             this.panelPrint.Controls.Add(this.label28);
-            this.panelPrint.Controls.Add(this.txtinvoicebalancce);
+            this.panelPrint.Controls.Add(this.txtreturnbalancce);
             this.panelPrint.Controls.Add(this.label34);
-            this.panelPrint.Controls.Add(this.txtinvoicecash);
+            this.panelPrint.Controls.Add(this.txtreturncash);
             this.panelPrint.Controls.Add(this.label32);
             this.panelPrint.Controls.Add(this.label33);
-            this.panelPrint.Controls.Add(this.txtinvoicetotal);
+            this.panelPrint.Controls.Add(this.txtreturn1total);
             this.panelPrint.Controls.Add(this.label31);
             this.panelPrint.Controls.Add(this.label23);
             this.panelPrint.Controls.Add(this.label24);
-            this.panelPrint.Controls.Add(this.txtinvoiceamount);
-            this.panelPrint.Controls.Add(this.txtinvoicedailyprice);
-            this.panelPrint.Controls.Add(this.txtinvoicedays);
-            this.panelPrint.Controls.Add(this.txtinvoicecarname);
-            this.panelPrint.Controls.Add(this.txtinvoicecarctg);
-            this.panelPrint.Controls.Add(this.txtinvoicecarid);
-            this.panelPrint.Controls.Add(this.txtinvoicerentid);
+            this.panelPrint.Controls.Add(this.txtreturntotal);
+            this.panelPrint.Controls.Add(this.txtdelayfee);
+            this.panelPrint.Controls.Add(this.txtdelaydates);
+            this.panelPrint.Controls.Add(this.txtreturncarname);
             this.panelPrint.Controls.Add(this.label22);
-            this.panelPrint.Controls.Add(this.label21);
+            this.panelPrint.Controls.Add(this.label16);
             this.panelPrint.Controls.Add(this.label20);
             this.panelPrint.Controls.Add(this.label19);
-            this.panelPrint.Controls.Add(this.label18);
-            this.panelPrint.Controls.Add(this.label17);
-            this.panelPrint.Controls.Add(this.label16);
             this.panelPrint.Controls.Add(this.panel2);
             this.panelPrint.Controls.Add(this.label7);
             this.panelPrint.Controls.Add(this.panel3);
@@ -190,12 +159,12 @@
             this.panelPrint.Controls.Add(this.label10);
             this.panelPrint.Controls.Add(this.label8);
             this.panelPrint.Controls.Add(this.txtinvoicecusphone);
-            this.panelPrint.Controls.Add(this.txtinvoicecusname);
+            this.panelPrint.Controls.Add(this.txtreturncusname);
             this.panelPrint.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelPrint.Location = new System.Drawing.Point(0, 50);
             this.panelPrint.Name = "panelPrint";
             this.panelPrint.Size = new System.Drawing.Size(1046, 602);
-            this.panelPrint.TabIndex = 45;
+            this.panelPrint.TabIndex = 48;
             this.panelPrint.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrint_Paint);
             // 
             // label40
@@ -208,7 +177,6 @@
             this.label40.Size = new System.Drawing.Size(28, 23);
             this.label40.TabIndex = 105;
             this.label40.Text = "Rs.";
-            this.label40.Click += new System.EventHandler(this.label38_Click);
             // 
             // label39
             // 
@@ -220,7 +188,6 @@
             this.label39.Size = new System.Drawing.Size(28, 23);
             this.label39.TabIndex = 105;
             this.label39.Text = "Rs.";
-            this.label39.Click += new System.EventHandler(this.label38_Click);
             // 
             // label38
             // 
@@ -232,7 +199,6 @@
             this.label38.Size = new System.Drawing.Size(28, 23);
             this.label38.TabIndex = 105;
             this.label38.Text = "Rs.";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // label37
             // 
@@ -283,18 +249,19 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(788, 288);
+            this.label27.Location = new System.Drawing.Point(775, 290);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(29, 23);
             this.label27.TabIndex = 103;
             this.label27.Text = ".00";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(949, 251);
+            this.label26.Location = new System.Drawing.Point(951, 251);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(40, 23);
             this.label26.TabIndex = 102;
@@ -305,7 +272,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(789, 251);
+            this.label25.Location = new System.Drawing.Point(755, 252);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(40, 23);
             this.label25.TabIndex = 101;
@@ -404,17 +371,17 @@
             this.label28.TabIndex = 92;
             this.label28.Text = "Cashier Signature";
             // 
-            // txtinvoicebalancce
+            // txtreturnbalancce
             // 
-            this.txtinvoicebalancce.BackColor = System.Drawing.Color.White;
-            this.txtinvoicebalancce.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicebalancce.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicebalancce.Location = new System.Drawing.Point(882, 405);
-            this.txtinvoicebalancce.Multiline = true;
-            this.txtinvoicebalancce.Name = "txtinvoicebalancce";
-            this.txtinvoicebalancce.Size = new System.Drawing.Size(109, 22);
-            this.txtinvoicebalancce.TabIndex = 87;
-            this.txtinvoicebalancce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtreturnbalancce.BackColor = System.Drawing.Color.White;
+            this.txtreturnbalancce.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreturnbalancce.ForeColor = System.Drawing.Color.Black;
+            this.txtreturnbalancce.Location = new System.Drawing.Point(882, 405);
+            this.txtreturnbalancce.Multiline = true;
+            this.txtreturnbalancce.Name = "txtreturnbalancce";
+            this.txtreturnbalancce.Size = new System.Drawing.Size(109, 22);
+            this.txtreturnbalancce.TabIndex = 87;
+            this.txtreturnbalancce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label34
             // 
@@ -427,17 +394,17 @@
             this.label34.TabIndex = 83;
             this.label34.Text = ":";
             // 
-            // txtinvoicecash
+            // txtreturncash
             // 
-            this.txtinvoicecash.BackColor = System.Drawing.Color.White;
-            this.txtinvoicecash.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicecash.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicecash.Location = new System.Drawing.Point(882, 377);
-            this.txtinvoicecash.Multiline = true;
-            this.txtinvoicecash.Name = "txtinvoicecash";
-            this.txtinvoicecash.Size = new System.Drawing.Size(109, 22);
-            this.txtinvoicecash.TabIndex = 86;
-            this.txtinvoicecash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtreturncash.BackColor = System.Drawing.Color.White;
+            this.txtreturncash.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreturncash.ForeColor = System.Drawing.Color.Black;
+            this.txtreturncash.Location = new System.Drawing.Point(882, 377);
+            this.txtreturncash.Multiline = true;
+            this.txtreturncash.Name = "txtreturncash";
+            this.txtreturncash.Size = new System.Drawing.Size(109, 22);
+            this.txtreturncash.TabIndex = 86;
+            this.txtreturncash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label32
             // 
@@ -461,17 +428,17 @@
             this.label33.TabIndex = 82;
             this.label33.Text = "Balance";
             // 
-            // txtinvoicetotal
+            // txtreturn1total
             // 
-            this.txtinvoicetotal.BackColor = System.Drawing.Color.White;
-            this.txtinvoicetotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicetotal.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicetotal.Location = new System.Drawing.Point(882, 349);
-            this.txtinvoicetotal.Multiline = true;
-            this.txtinvoicetotal.Name = "txtinvoicetotal";
-            this.txtinvoicetotal.Size = new System.Drawing.Size(109, 22);
-            this.txtinvoicetotal.TabIndex = 88;
-            this.txtinvoicetotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtreturn1total.BackColor = System.Drawing.Color.White;
+            this.txtreturn1total.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreturn1total.ForeColor = System.Drawing.Color.Black;
+            this.txtreturn1total.Location = new System.Drawing.Point(882, 349);
+            this.txtreturn1total.Multiline = true;
+            this.txtreturn1total.Name = "txtreturn1total";
+            this.txtreturn1total.Size = new System.Drawing.Size(109, 22);
+            this.txtreturn1total.TabIndex = 88;
+            this.txtreturn1total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label31
             // 
@@ -506,89 +473,54 @@
             this.label24.TabIndex = 80;
             this.label24.Text = "Total";
             // 
-            // txtinvoiceamount
+            // txtreturntotal
             // 
-            this.txtinvoiceamount.BackColor = System.Drawing.Color.White;
-            this.txtinvoiceamount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoiceamount.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoiceamount.Location = new System.Drawing.Point(852, 288);
-            this.txtinvoiceamount.Multiline = true;
-            this.txtinvoiceamount.Name = "txtinvoiceamount";
-            this.txtinvoiceamount.Size = new System.Drawing.Size(109, 22);
-            this.txtinvoiceamount.TabIndex = 79;
-            this.txtinvoiceamount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtreturntotal.BackColor = System.Drawing.Color.White;
+            this.txtreturntotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreturntotal.ForeColor = System.Drawing.Color.Black;
+            this.txtreturntotal.Location = new System.Drawing.Point(852, 288);
+            this.txtreturntotal.Multiline = true;
+            this.txtreturntotal.Name = "txtreturntotal";
+            this.txtreturntotal.Size = new System.Drawing.Size(109, 22);
+            this.txtreturntotal.TabIndex = 79;
+            this.txtreturntotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtinvoicedailyprice
+            // txtdelayfee
             // 
-            this.txtinvoicedailyprice.BackColor = System.Drawing.Color.White;
-            this.txtinvoicedailyprice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicedailyprice.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicedailyprice.Location = new System.Drawing.Point(696, 288);
-            this.txtinvoicedailyprice.Multiline = true;
-            this.txtinvoicedailyprice.Name = "txtinvoicedailyprice";
-            this.txtinvoicedailyprice.Size = new System.Drawing.Size(92, 22);
-            this.txtinvoicedailyprice.TabIndex = 78;
-            this.txtinvoicedailyprice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtdelayfee.BackColor = System.Drawing.Color.White;
+            this.txtdelayfee.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtdelayfee.ForeColor = System.Drawing.Color.Black;
+            this.txtdelayfee.Location = new System.Drawing.Point(660, 290);
+            this.txtdelayfee.Multiline = true;
+            this.txtdelayfee.Name = "txtdelayfee";
+            this.txtdelayfee.Size = new System.Drawing.Size(109, 22);
+            this.txtdelayfee.TabIndex = 76;
+            this.txtdelayfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtinvoicedays
+            // txtdelaydates
             // 
-            this.txtinvoicedays.BackColor = System.Drawing.Color.White;
-            this.txtinvoicedays.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicedays.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicedays.Location = new System.Drawing.Point(588, 288);
-            this.txtinvoicedays.Multiline = true;
-            this.txtinvoicedays.Name = "txtinvoicedays";
-            this.txtinvoicedays.Size = new System.Drawing.Size(71, 22);
-            this.txtinvoicedays.TabIndex = 77;
-            this.txtinvoicedays.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdelaydates.BackColor = System.Drawing.Color.White;
+            this.txtdelaydates.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtdelaydates.ForeColor = System.Drawing.Color.Black;
+            this.txtdelaydates.Location = new System.Drawing.Point(471, 288);
+            this.txtdelaydates.Multiline = true;
+            this.txtdelaydates.Name = "txtdelaydates";
+            this.txtdelaydates.Size = new System.Drawing.Size(102, 22);
+            this.txtdelaydates.TabIndex = 75;
+            this.txtdelaydates.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdelaydates.TextChanged += new System.EventHandler(this.txtinvoicecarctg_TextChanged);
             // 
-            // txtinvoicecarname
+            // txtreturncarname
             // 
-            this.txtinvoicecarname.BackColor = System.Drawing.Color.White;
-            this.txtinvoicecarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicecarname.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicecarname.Location = new System.Drawing.Point(428, 288);
-            this.txtinvoicecarname.Multiline = true;
-            this.txtinvoicecarname.Name = "txtinvoicecarname";
-            this.txtinvoicecarname.Size = new System.Drawing.Size(109, 22);
-            this.txtinvoicecarname.TabIndex = 76;
-            this.txtinvoicecarname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtinvoicecarctg
-            // 
-            this.txtinvoicecarctg.BackColor = System.Drawing.Color.White;
-            this.txtinvoicecarctg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicecarctg.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicecarctg.Location = new System.Drawing.Point(279, 288);
-            this.txtinvoicecarctg.Multiline = true;
-            this.txtinvoicecarctg.Name = "txtinvoicecarctg";
-            this.txtinvoicecarctg.Size = new System.Drawing.Size(102, 22);
-            this.txtinvoicecarctg.TabIndex = 75;
-            this.txtinvoicecarctg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtinvoicecarid
-            // 
-            this.txtinvoicecarid.BackColor = System.Drawing.Color.White;
-            this.txtinvoicecarid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicecarid.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicecarid.Location = new System.Drawing.Point(151, 288);
-            this.txtinvoicecarid.Multiline = true;
-            this.txtinvoicecarid.Name = "txtinvoicecarid";
-            this.txtinvoicecarid.Size = new System.Drawing.Size(84, 22);
-            this.txtinvoicecarid.TabIndex = 74;
-            this.txtinvoicecarid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtinvoicerentid
-            // 
-            this.txtinvoicerentid.BackColor = System.Drawing.Color.White;
-            this.txtinvoicerentid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicerentid.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicerentid.Location = new System.Drawing.Point(41, 288);
-            this.txtinvoicerentid.Multiline = true;
-            this.txtinvoicerentid.Name = "txtinvoicerentid";
-            this.txtinvoicerentid.Size = new System.Drawing.Size(84, 22);
-            this.txtinvoicerentid.TabIndex = 73;
-            this.txtinvoicerentid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtreturncarname.BackColor = System.Drawing.Color.White;
+            this.txtreturncarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreturncarname.ForeColor = System.Drawing.Color.Black;
+            this.txtreturncarname.Location = new System.Drawing.Point(276, 288);
+            this.txtreturncarname.Multiline = true;
+            this.txtreturncarname.Name = "txtreturncarname";
+            this.txtreturncarname.Size = new System.Drawing.Size(84, 22);
+            this.txtreturncarname.TabIndex = 73;
+            this.txtreturncarname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
             // 
@@ -601,71 +533,38 @@
             this.label22.TabIndex = 72;
             this.label22.Text = "Amount";
             // 
-            // label21
+            // label16
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(717, 251);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 23);
-            this.label21.TabIndex = 71;
-            this.label21.Text = "Daily Price";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(675, 251);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(72, 23);
+            this.label16.TabIndex = 70;
+            this.label16.Text = "Delay Fee";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(584, 251);
+            this.label20.Location = new System.Drawing.Point(467, 251);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 23);
+            this.label20.Size = new System.Drawing.Size(87, 23);
             this.label20.TabIndex = 70;
-            this.label20.Text = "No of Days";
+            this.label20.Text = "Delay Dates";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(444, 251);
+            this.label19.Location = new System.Drawing.Point(284, 251);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(76, 23);
             this.label19.TabIndex = 69;
             this.label19.Text = "Car Name";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(275, 251);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 23);
-            this.label18.TabIndex = 68;
-            this.label18.Text = "Car Cateogery";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(168, 251);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 23);
-            this.label17.TabIndex = 67;
-            this.label17.Text = "Car ID";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(49, 251);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 23);
-            this.label16.TabIndex = 66;
-            this.label16.Text = "Rental ID";
             // 
             // panel2
             // 
@@ -828,11 +727,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(470, 83);
+            this.label5.Location = new System.Drawing.Point(428, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 40);
+            this.label5.Size = new System.Drawing.Size(183, 40);
             this.label5.TabIndex = 50;
-            this.label5.Text = "Invoice";
+            this.label5.Text = "Return Invoice";
             // 
             // label10
             // 
@@ -866,25 +765,25 @@
             this.txtinvoicecusphone.Size = new System.Drawing.Size(169, 15);
             this.txtinvoicecusphone.TabIndex = 57;
             // 
-            // txtinvoicecusname
+            // txtreturncusname
             // 
-            this.txtinvoicecusname.BackColor = System.Drawing.Color.White;
-            this.txtinvoicecusname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoicecusname.ForeColor = System.Drawing.Color.Black;
-            this.txtinvoicecusname.Location = new System.Drawing.Point(172, 161);
-            this.txtinvoicecusname.Name = "txtinvoicecusname";
-            this.txtinvoicecusname.Size = new System.Drawing.Size(169, 15);
-            this.txtinvoicecusname.TabIndex = 58;
+            this.txtreturncusname.BackColor = System.Drawing.Color.White;
+            this.txtreturncusname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreturncusname.ForeColor = System.Drawing.Color.Black;
+            this.txtreturncusname.Location = new System.Drawing.Point(172, 161);
+            this.txtreturncusname.Name = "txtreturncusname";
+            this.txtreturncusname.Size = new System.Drawing.Size(169, 15);
+            this.txtreturncusname.TabIndex = 58;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(965, -2);
+            this.pictureBox3.Location = new System.Drawing.Point(965, -1);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 44;
+            this.pictureBox3.TabIndex = 47;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
@@ -893,38 +792,30 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::CarRentalSystem.Properties.Resources.printing;
-            this.pictureBox1.Location = new System.Drawing.Point(914, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(914, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
-            // label42
+            // printDocument1
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(123, 377);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(86, 23);
-            this.label42.TabIndex = 106;
-            this.label42.Text = "Return Date";
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // returndate2
+            // printPreviewDialog1
             // 
-            this.returndate2.CalendarFont = new System.Drawing.Font("Poppins SemiBold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returndate2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.returndate2.Font = new System.Drawing.Font("Poppins SemiBold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returndate2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.returndate2.Location = new System.Drawing.Point(225, 375);
-            this.returndate2.Name = "returndate2";
-            this.returndate2.Size = new System.Drawing.Size(129, 25);
-            this.returndate2.TabIndex = 107;
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
-            // CustomerInvoice
+            // returninvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -934,11 +825,10 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CustomerInvoice";
+            this.Name = "returninvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CustomerInvoice";
-            this.Load += new System.EventHandler(this.CustomerInvoice_Load);
+            this.Text = "returninvoice";
+            this.Load += new System.EventHandler(this.returninvoice_Load);
             this.panelPrint.ResumeLayout(false);
             this.panelPrint.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -951,40 +841,44 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+
         private System.Windows.Forms.Panel panelPrint;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox txtinvoicebalancce;
+        private System.Windows.Forms.TextBox txtreturnbalancce;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtinvoicecash;
+        private System.Windows.Forms.TextBox txtreturncash;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox txtinvoicetotal;
+        private System.Windows.Forms.TextBox txtreturn1total;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtinvoiceamount;
-        private System.Windows.Forms.TextBox txtinvoicedailyprice;
-        private System.Windows.Forms.TextBox txtinvoicedays;
-        private System.Windows.Forms.TextBox txtinvoicecarname;
-        private System.Windows.Forms.TextBox txtinvoicecarctg;
-        private System.Windows.Forms.TextBox txtinvoicecarid;
-        private System.Windows.Forms.TextBox txtinvoicerentid;
+        private System.Windows.Forms.TextBox txtreturntotal;
+        private System.Windows.Forms.TextBox txtdelayfee;
+        private System.Windows.Forms.TextBox txtdelaydates;
+        private System.Windows.Forms.TextBox txtreturncarname;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel3;
@@ -1004,22 +898,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtinvoicecusphone;
-        private System.Windows.Forms.TextBox txtinvoicecusname;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.DateTimePicker returndate2;
+        private System.Windows.Forms.TextBox txtreturncusname;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

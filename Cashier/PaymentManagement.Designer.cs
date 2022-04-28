@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentManagement));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtinvoiveno = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -69,6 +69,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbltotalamount = new System.Windows.Forms.Label();
             this.lbl11 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.returndate1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpayment)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +78,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.returndate1);
             this.panel1.Controls.Add(this.txtinvoiveno);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
@@ -105,6 +108,7 @@
             this.panel1.Controls.Add(this.txtrentcus);
             this.panel1.Controls.Add(this.txtdailyprice);
             this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox2);
@@ -114,6 +118,7 @@
             this.panel1.Controls.Add(this.lbl11);
             this.panel1.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1256, 886);
             this.panel1.TabIndex = 3;
@@ -122,7 +127,8 @@
             // txtinvoiveno
             // 
             this.txtinvoiveno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtinvoiveno.Location = new System.Drawing.Point(874, 50);
+            this.txtinvoiveno.Location = new System.Drawing.Point(875, 50);
+            this.txtinvoiveno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtinvoiveno.Multiline = true;
             this.txtinvoiveno.Name = "txtinvoiveno";
             this.txtinvoiveno.Size = new System.Drawing.Size(277, 38);
@@ -162,7 +168,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(536, 553);
+            this.label12.Location = new System.Drawing.Point(488, 553);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(46, 36);
             this.label12.TabIndex = 44;
@@ -172,7 +178,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(536, 419);
+            this.label11.Location = new System.Drawing.Point(488, 418);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(46, 36);
             this.label11.TabIndex = 43;
@@ -182,7 +188,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(536, 367);
+            this.label10.Location = new System.Drawing.Point(488, 367);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(46, 36);
             this.label10.TabIndex = 42;
@@ -195,8 +201,8 @@
             this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(365, 697);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(317, 697);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(220, 65);
             this.button4.TabIndex = 41;
@@ -213,32 +219,33 @@
             this.dgvpayment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvpayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvpayment.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvpayment.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.NullValue = null;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvpayment.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvpayment.GridColor = System.Drawing.Color.Black;
-            this.dgvpayment.Location = new System.Drawing.Point(667, 300);
+            this.dgvpayment.Location = new System.Drawing.Point(615, 362);
+            this.dgvpayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvpayment.Name = "dgvpayment";
             this.dgvpayment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvpayment.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvpayment.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvpayment.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvpayment.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvpayment.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvpayment.RowTemplate.Height = 24;
-            this.dgvpayment.Size = new System.Drawing.Size(484, 552);
+            this.dgvpayment.Size = new System.Drawing.Size(600, 489);
             this.dgvpayment.TabIndex = 40;
             this.dgvpayment.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpayment_CellContentClick);
             // 
@@ -249,10 +256,10 @@
             this.btnprint.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.ForeColor = System.Drawing.Color.Red;
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(191, 786);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(4);
+            this.btnprint.Location = new System.Drawing.Point(143, 786);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(302, 66);
+            this.btnprint.Size = new System.Drawing.Size(301, 66);
             this.btnprint.TabIndex = 39;
             this.btnprint.Text = "Print Invoice";
             this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -262,7 +269,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(100, 489);
+            this.button3.Location = new System.Drawing.Point(52, 489);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(485, 39);
             this.button3.TabIndex = 38;
@@ -273,7 +281,8 @@
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(874, 107);
+            this.textBox5.Location = new System.Drawing.Point(875, 107);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(277, 38);
@@ -281,7 +290,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(97, 300);
+            this.button2.Location = new System.Drawing.Point(49, 300);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(485, 39);
             this.button2.TabIndex = 36;
@@ -296,8 +306,8 @@
             this.button1.Font = new System.Drawing.Font("Poppins SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(101, 697);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(53, 697);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 65);
             this.button1.TabIndex = 35;
@@ -314,10 +324,10 @@
             this.btnLogOut_Yes.Font = new System.Drawing.Font("Poppins SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut_Yes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLogOut_Yes.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut_Yes.Image")));
-            this.btnLogOut_Yes.Location = new System.Drawing.Point(101, 613);
-            this.btnLogOut_Yes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogOut_Yes.Location = new System.Drawing.Point(53, 613);
+            this.btnLogOut_Yes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogOut_Yes.Name = "btnLogOut_Yes";
-            this.btnLogOut_Yes.Size = new System.Drawing.Size(484, 67);
+            this.btnLogOut_Yes.Size = new System.Drawing.Size(484, 66);
             this.btnLogOut_Yes.TabIndex = 35;
             this.btnLogOut_Yes.Text = "Paid";
             this.btnLogOut_Yes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -329,8 +339,9 @@
             // 
             this.comboBoxrentId.FormattingEnabled = true;
             this.comboBoxrentId.Location = new System.Drawing.Point(307, 103);
+            this.comboBoxrentId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxrentId.Name = "comboBoxrentId";
-            this.comboBoxrentId.Size = new System.Drawing.Size(278, 39);
+            this.comboBoxrentId.Size = new System.Drawing.Size(279, 39);
             this.comboBoxrentId.TabIndex = 34;
             this.comboBoxrentId.SelectedIndexChanged += new System.EventHandler(this.comboBoxrentId_SelectedIndexChanged);
             // 
@@ -338,7 +349,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(302, 553);
+            this.label7.Location = new System.Drawing.Point(253, 553);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 36);
             this.label7.TabIndex = 32;
@@ -349,7 +360,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(299, 419);
+            this.label5.Location = new System.Drawing.Point(251, 418);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 36);
             this.label5.TabIndex = 32;
@@ -360,7 +371,7 @@
             // 
             this.lblrs.AutoSize = true;
             this.lblrs.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrs.Location = new System.Drawing.Point(299, 367);
+            this.lblrs.Location = new System.Drawing.Point(251, 367);
             this.lblrs.Name = "lblrs";
             this.lblrs.Size = new System.Drawing.Size(49, 36);
             this.lblrs.TabIndex = 32;
@@ -370,7 +381,8 @@
             // textbalance
             // 
             this.textbalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbalance.Location = new System.Drawing.Point(357, 548);
+            this.textbalance.Location = new System.Drawing.Point(309, 548);
+            this.textbalance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textbalance.Multiline = true;
             this.textbalance.Name = "textbalance";
             this.textbalance.Size = new System.Drawing.Size(177, 38);
@@ -381,7 +393,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(159, 550);
+            this.label6.Location = new System.Drawing.Point(111, 550);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 36);
             this.label6.TabIndex = 30;
@@ -391,7 +403,8 @@
             // txtcash
             // 
             this.txtcash.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcash.Location = new System.Drawing.Point(354, 414);
+            this.txtcash.Location = new System.Drawing.Point(307, 414);
+            this.txtcash.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcash.Multiline = true;
             this.txtcash.Name = "txtcash";
             this.txtcash.Size = new System.Drawing.Size(180, 38);
@@ -402,7 +415,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(185, 416);
+            this.label4.Location = new System.Drawing.Point(137, 416);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 36);
             this.label4.TabIndex = 30;
@@ -412,7 +425,8 @@
             // txttotal
             // 
             this.txttotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txttotal.Location = new System.Drawing.Point(354, 362);
+            this.txttotal.Location = new System.Drawing.Point(307, 362);
+            this.txttotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttotal.Multiline = true;
             this.txttotal.Name = "txttotal";
             this.txttotal.Size = new System.Drawing.Size(180, 38);
@@ -423,7 +437,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 367);
+            this.label1.Location = new System.Drawing.Point(43, 367);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 36);
             this.label1.TabIndex = 30;
@@ -444,6 +458,7 @@
             // 
             this.txtrentcus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtrentcus.Location = new System.Drawing.Point(308, 220);
+            this.txtrentcus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtrentcus.Multiline = true;
             this.txtrentcus.Name = "txtrentcus";
             this.txtrentcus.Size = new System.Drawing.Size(277, 38);
@@ -453,6 +468,7 @@
             // 
             this.txtdailyprice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtdailyprice.Location = new System.Drawing.Point(923, 220);
+            this.txtdailyprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtdailyprice.Multiline = true;
             this.txtdailyprice.Name = "txtdailyprice";
             this.txtdailyprice.Size = new System.Drawing.Size(180, 38);
@@ -461,7 +477,8 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(874, 166);
+            this.textBox3.Location = new System.Drawing.Point(875, 166);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(277, 38);
@@ -482,7 +499,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(661, 168);
+            this.label3.Location = new System.Drawing.Point(661, 167);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 36);
             this.label3.TabIndex = 11;
@@ -492,6 +509,7 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(308, 162);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(277, 38);
@@ -533,17 +551,36 @@
             this.lbl11.BackColor = System.Drawing.Color.Black;
             this.lbl11.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl11.ForeColor = System.Drawing.Color.White;
-            this.lbl11.Location = new System.Drawing.Point(18, 18);
+            this.lbl11.Location = new System.Drawing.Point(19, 18);
             this.lbl11.Name = "lbl11";
             this.lbl11.Size = new System.Drawing.Size(352, 50);
             this.lbl11.TabIndex = 4;
             this.lbl11.Text = "Payment Management";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(661, 273);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(135, 36);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Return Date";
+            // 
+            // returndate1
+            // 
+            this.returndate1.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returndate1.Location = new System.Drawing.Point(875, 275);
+            this.returndate1.Name = "returndate1";
+            this.returndate1.Size = new System.Drawing.Size(299, 30);
+            this.returndate1.TabIndex = 49;
             // 
             // PaymentManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PaymentManagement";
             this.Size = new System.Drawing.Size(1256, 886);
             this.Load += new System.EventHandler(this.PaymentManagement_Load);
@@ -593,5 +630,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtinvoiveno;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DateTimePicker returndate1;
     }
 }
