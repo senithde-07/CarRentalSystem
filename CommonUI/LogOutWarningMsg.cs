@@ -34,12 +34,12 @@ namespace CarRentalSystem.CommonUI
 
         private void btnLogOut_Yes_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            //Application.Restart();
         }
 
         private void btnLogOut_No_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -50,6 +50,21 @@ namespace CarRentalSystem.CommonUI
         private void LogOutWarningMsg_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Yes_Click_1(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void btnLogOut_No_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvcarmangement = new System.Windows.Forms.DataGridView();
             this.lbl11 = new System.Windows.Forms.Label();
-            this.txtreportctg = new System.Windows.Forms.TextBox();
+            this.txtseach = new System.Windows.Forms.TextBox();
+            this.txtseachcarname = new System.Windows.Forms.TextBox();
             this.lblcarcatgerory = new System.Windows.Forms.Label();
             this.lblcarname = new System.Windows.Forms.Label();
-            this.txtreportcarname = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcarmangement)).BeginInit();
             this.SuspendLayout();
@@ -46,9 +46,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.lblcarname);
-            this.panel1.Controls.Add(this.txtreportcarname);
-            this.panel1.Controls.Add(this.txtreportctg);
             this.panel1.Controls.Add(this.lblcarcatgerory);
+            this.panel1.Controls.Add(this.txtseachcarname);
+            this.panel1.Controls.Add(this.txtseach);
             this.panel1.Controls.Add(this.dgvcarmangement);
             this.panel1.Controls.Add(this.lbl11);
             this.panel1.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,30 +65,30 @@
             this.dgvcarmangement.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvcarmangement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvcarmangement.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.NullValue = null;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvcarmangement.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.NullValue = null;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvcarmangement.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvcarmangement.GridColor = System.Drawing.Color.Black;
             this.dgvcarmangement.Location = new System.Drawing.Point(27, 176);
             this.dgvcarmangement.Name = "dgvcarmangement";
             this.dgvcarmangement.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvcarmangement.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcarmangement.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvcarmangement.RowHeadersWidth = 51;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvcarmangement.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcarmangement.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvcarmangement.RowTemplate.Height = 24;
             this.dgvcarmangement.Size = new System.Drawing.Size(1205, 682);
             this.dgvcarmangement.TabIndex = 41;
@@ -105,46 +105,45 @@
             this.lbl11.TabIndex = 4;
             this.lbl11.Text = "Car Report";
             // 
-            // txtreportctg
+            // txtseach
             // 
-            this.txtreportctg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtreportctg.Location = new System.Drawing.Point(309, 114);
-            this.txtreportctg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtreportctg.Multiline = true;
-            this.txtreportctg.Name = "txtreportctg";
-            this.txtreportctg.Size = new System.Drawing.Size(277, 38);
-            this.txtreportctg.TabIndex = 43;
-            this.txtreportctg.TextChanged += new System.EventHandler(this.txtreportctg_TextChanged);
+            this.txtseach.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtseach.Location = new System.Drawing.Point(297, 106);
+            this.txtseach.Multiline = true;
+            this.txtseach.Name = "txtseach";
+            this.txtseach.Size = new System.Drawing.Size(300, 38);
+            this.txtseach.TabIndex = 45;
+            this.txtseach.TextChanged += new System.EventHandler(this.txtseach_TextChanged);
+            // 
+            // txtseachcarname
+            // 
+            this.txtseachcarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtseachcarname.Location = new System.Drawing.Point(835, 106);
+            this.txtseachcarname.Multiline = true;
+            this.txtseachcarname.Name = "txtseachcarname";
+            this.txtseachcarname.Size = new System.Drawing.Size(300, 38);
+            this.txtseachcarname.TabIndex = 46;
+            this.txtseachcarname.TextChanged += new System.EventHandler(this.txtseachcarname_TextChanged);
             // 
             // lblcarcatgerory
             // 
             this.lblcarcatgerory.AutoSize = true;
             this.lblcarcatgerory.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcarcatgerory.Location = new System.Drawing.Point(120, 116);
+            this.lblcarcatgerory.Location = new System.Drawing.Point(128, 108);
             this.lblcarcatgerory.Name = "lblcarcatgerory";
             this.lblcarcatgerory.Size = new System.Drawing.Size(153, 36);
-            this.lblcarcatgerory.TabIndex = 42;
+            this.lblcarcatgerory.TabIndex = 47;
             this.lblcarcatgerory.Text = "Car Category";
             // 
             // lblcarname
             // 
             this.lblcarname.AutoSize = true;
             this.lblcarname.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcarname.Location = new System.Drawing.Point(714, 116);
+            this.lblcarname.Location = new System.Drawing.Point(696, 108);
             this.lblcarname.Name = "lblcarname";
             this.lblcarname.Size = new System.Drawing.Size(119, 36);
-            this.lblcarname.TabIndex = 44;
+            this.lblcarname.TabIndex = 48;
             this.lblcarname.Text = "Car Name";
-            // 
-            // txtreportcarname
-            // 
-            this.txtreportcarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtreportcarname.Location = new System.Drawing.Point(862, 114);
-            this.txtreportcarname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtreportcarname.Multiline = true;
-            this.txtreportcarname.Name = "txtreportcarname";
-            this.txtreportcarname.Size = new System.Drawing.Size(277, 38);
-            this.txtreportcarname.TabIndex = 43;
             // 
             // Cars_Report
             // 
@@ -167,9 +166,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl11;
         private System.Windows.Forms.DataGridView dgvcarmangement;
-        private System.Windows.Forms.TextBox txtreportctg;
+        private System.Windows.Forms.TextBox txtseach;
+        private System.Windows.Forms.TextBox txtseachcarname;
         private System.Windows.Forms.Label lblcarcatgerory;
         private System.Windows.Forms.Label lblcarname;
-        private System.Windows.Forms.TextBox txtreportcarname;
     }
 }

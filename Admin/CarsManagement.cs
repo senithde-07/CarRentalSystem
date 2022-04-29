@@ -37,6 +37,9 @@ namespace CarRentalSystem.Admin
 
             Con.Close();
         }
+
+        
+
         private void lbl7_Click(object sender, EventArgs e)
         {
 

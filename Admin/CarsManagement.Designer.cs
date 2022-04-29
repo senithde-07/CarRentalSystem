@@ -257,6 +257,7 @@
             this.comboBoxcarcatgerory.Name = "comboBoxcarcatgerory";
             this.comboBoxcarcatgerory.Size = new System.Drawing.Size(279, 39);
             this.comboBoxcarcatgerory.TabIndex = 8;
+            this.comboBoxcarcatgerory.Text = "Select Car Category";
             this.comboBoxcarcatgerory.SelectedIndexChanged += new System.EventHandler(this.comboBoxcarcatgerory_SelectedIndexChanged);
             // 
             // btncarmanDELETE

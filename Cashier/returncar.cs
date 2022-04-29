@@ -181,13 +181,12 @@ namespace CarRentalSystem.Cashier
         private void dgvreturn_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtreturnnid.Text = dgvreturn.CurrentRow.Cells[0].Value.ToString();
-            txtreturncarid.Text = dgvreturn.CurrentRow.Cells[1].Value.ToString();
-            txtreturncarname.Text = dgvreturn.CurrentRow.Cells[2].Value.ToString();
-            txtreturncus.Text = dgvreturn.CurrentRow.Cells[3].Value.ToString();
-            delaydates.Text = dgvreturn.CurrentRow.Cells[4].Value.ToString();
-            total.Text = dgvreturn.CurrentRow.Cells[5].Value.ToString();
-            txtcash.Text = dgvreturn.CurrentRow.Cells[6].Value.ToString();
-            //textbalance.Text = dgvreturn.CurrentRow.Cells[7].Value.ToString();
+            txtreturncarname.Text = dgvreturn.CurrentRow.Cells[1].Value.ToString();
+            txtreturncus.Text = dgvreturn.CurrentRow.Cells[2].Value.ToString();
+            delaydates.Text = dgvreturn.CurrentRow.Cells[3].Value.ToString();
+            total.Text = dgvreturn.CurrentRow.Cells[4].Value.ToString();
+            txtcash.Text = dgvreturn.CurrentRow.Cells[5].Value.ToString();
+            textbalance.Text = dgvreturn.CurrentRow.Cells[6].Value.ToString();
 
         }
 

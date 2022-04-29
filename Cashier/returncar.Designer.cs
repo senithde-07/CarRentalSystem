@@ -84,10 +84,9 @@
             this.lbl8.BackColor = System.Drawing.Color.Black;
             this.lbl8.Font = new System.Drawing.Font("Poppins SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl8.ForeColor = System.Drawing.Color.White;
-            this.lbl8.Location = new System.Drawing.Point(14, 15);
-            this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl8.Location = new System.Drawing.Point(19, 18);
             this.lbl8.Name = "lbl8";
-            this.lbl8.Size = new System.Drawing.Size(311, 39);
+            this.lbl8.Size = new System.Drawing.Size(392, 50);
             this.lbl8.TabIndex = 4;
             this.lbl8.Text = "Return Cars Management";
             // 
@@ -95,10 +94,9 @@
             // 
             this.lblinsuranceno.AutoSize = true;
             this.lblinsuranceno.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinsuranceno.Location = new System.Drawing.Point(16, 256);
-            this.lblinsuranceno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblinsuranceno.Location = new System.Drawing.Point(21, 315);
             this.lblinsuranceno.Name = "lblinsuranceno";
-            this.lblinsuranceno.Size = new System.Drawing.Size(157, 28);
+            this.lblinsuranceno.Size = new System.Drawing.Size(197, 36);
             this.lblinsuranceno.TabIndex = 11;
             this.lblinsuranceno.Text = "Delay Fee per Day";
             // 
@@ -106,22 +104,20 @@
             // 
             this.lbltotalamount.AutoSize = true;
             this.lbltotalamount.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalamount.Location = new System.Drawing.Point(16, 176);
-            this.lbltotalamount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltotalamount.Location = new System.Drawing.Point(21, 217);
             this.lbltotalamount.Name = "lbltotalamount";
-            this.lbltotalamount.Size = new System.Drawing.Size(84, 28);
+            this.lbltotalamount.Size = new System.Drawing.Size(134, 45);
             this.lbltotalamount.TabIndex = 40;
-            this.lbltotalamount.Text = "Retern ID";
+            this.lbltotalamount.Text = "Return ID";
             this.lbltotalamount.Click += new System.EventHandler(this.lbltotalamount_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(507, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(713, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 28);
+            this.label1.Size = new System.Drawing.Size(120, 36);
             this.label1.TabIndex = 39;
             this.label1.Text = "Car Model";
             // 
@@ -129,10 +125,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 73);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(23, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 28);
+            this.label3.Size = new System.Drawing.Size(114, 36);
             this.label3.TabIndex = 40;
             this.label3.Text = "Invoice ID";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -141,62 +136,60 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(256, 75);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(417, 92);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 28);
+            this.label9.Size = new System.Drawing.Size(77, 36);
             this.label9.TabIndex = 38;
             this.label9.Text = "Car ID";
             // 
             // txtreturncarname
             // 
             this.txtreturncarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtreturncarname.Location = new System.Drawing.Point(667, 72);
-            this.txtreturncarname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtreturncarname.Location = new System.Drawing.Point(875, 92);
+            this.txtreturncarname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtreturncarname.Multiline = true;
             this.txtreturncarname.Name = "txtreturncarname";
-            this.txtreturncarname.Size = new System.Drawing.Size(208, 31);
+            this.txtreturncarname.Size = new System.Drawing.Size(277, 38);
             this.txtreturncarname.TabIndex = 41;
             // 
             // txtreturncus
             // 
             this.txtreturncus.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtreturncus.Location = new System.Drawing.Point(178, 117);
-            this.txtreturncus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtreturncus.Location = new System.Drawing.Point(237, 149);
+            this.txtreturncus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtreturncus.Multiline = true;
             this.txtreturncus.Name = "txtreturncus";
-            this.txtreturncus.Size = new System.Drawing.Size(208, 31);
+            this.txtreturncus.Size = new System.Drawing.Size(277, 38);
             this.txtreturncus.TabIndex = 42;
             // 
             // lblselcustomer
             // 
             this.lblselcustomer.AutoSize = true;
             this.lblselcustomer.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblselcustomer.Location = new System.Drawing.Point(18, 119);
-            this.lblselcustomer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblselcustomer.Location = new System.Drawing.Point(24, 151);
             this.lblselcustomer.Name = "lblselcustomer";
-            this.lblselcustomer.Size = new System.Drawing.Size(93, 28);
+            this.lblselcustomer.Size = new System.Drawing.Size(116, 36);
             this.lblselcustomer.TabIndex = 43;
             this.lblselcustomer.Text = "Customer";
             // 
             // txtreturncarid
             // 
             this.txtreturncarid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtreturncarid.Location = new System.Drawing.Point(357, 73);
-            this.txtreturncarid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtreturncarid.Location = new System.Drawing.Point(512, 90);
+            this.txtreturncarid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtreturncarid.Multiline = true;
             this.txtreturncarid.Name = "txtreturncarid";
-            this.txtreturncarid.Size = new System.Drawing.Size(100, 31);
+            this.txtreturncarid.Size = new System.Drawing.Size(133, 38);
             this.txtreturncarid.TabIndex = 45;
             // 
             // txtreturnnid
             // 
             this.txtreturnnid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtreturnnid.Location = new System.Drawing.Point(179, 174);
-            this.txtreturnnid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtreturnnid.Location = new System.Drawing.Point(231, 217);
+            this.txtreturnnid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtreturnnid.Multiline = true;
             this.txtreturnnid.Name = "txtreturnnid";
-            this.txtreturnnid.Size = new System.Drawing.Size(124, 31);
+            this.txtreturnnid.Size = new System.Drawing.Size(165, 38);
             this.txtreturnnid.TabIndex = 45;
             this.txtreturnnid.TextChanged += new System.EventHandler(this.txtreturnnid_TextChanged);
             // 
@@ -204,10 +197,9 @@
             // 
             this.lblreturndate.AutoSize = true;
             this.lblreturndate.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblreturndate.Location = new System.Drawing.Point(470, 119);
-            this.lblreturndate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblreturndate.Location = new System.Drawing.Point(627, 151);
             this.lblreturndate.Name = "lblreturndate";
-            this.lblreturndate.Size = new System.Drawing.Size(108, 28);
+            this.lblreturndate.Size = new System.Drawing.Size(135, 36);
             this.lblreturndate.TabIndex = 46;
             this.lblreturndate.Text = "Return Date";
             // 
@@ -215,20 +207,20 @@
             // 
             this.returndate1.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returndate1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.returndate1.Location = new System.Drawing.Point(627, 120);
-            this.returndate1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.returndate1.Location = new System.Drawing.Point(836, 153);
+            this.returndate1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.returndate1.Name = "returndate1";
-            this.returndate1.Size = new System.Drawing.Size(119, 25);
+            this.returndate1.Size = new System.Drawing.Size(177, 30);
             this.returndate1.TabIndex = 47;
             // 
             // delayfee
             // 
             this.delayfee.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.delayfee.Location = new System.Drawing.Point(212, 261);
-            this.delayfee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.delayfee.Location = new System.Drawing.Point(283, 321);
+            this.delayfee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delayfee.Multiline = true;
             this.delayfee.Name = "delayfee";
-            this.delayfee.Size = new System.Drawing.Size(79, 20);
+            this.delayfee.Size = new System.Drawing.Size(105, 25);
             this.delayfee.TabIndex = 49;
             this.delayfee.Text = "2000";
             this.delayfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -237,10 +229,9 @@
             // 
             this.lblrs.AutoSize = true;
             this.lblrs.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrs.Location = new System.Drawing.Point(175, 258);
-            this.lblrs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblrs.Location = new System.Drawing.Point(233, 318);
             this.lblrs.Name = "lblrs";
-            this.lblrs.Size = new System.Drawing.Size(39, 28);
+            this.lblrs.Size = new System.Drawing.Size(49, 36);
             this.lblrs.TabIndex = 50;
             this.lblrs.Text = "Rs .";
             // 
@@ -248,10 +239,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(296, 262);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(395, 322);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 23);
+            this.label10.Size = new System.Drawing.Size(39, 30);
             this.label10.TabIndex = 51;
             this.label10.Text = ".00";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,31 +249,31 @@
             // comboBoxreturninvoiceno
             // 
             this.comboBoxreturninvoiceno.FormattingEnabled = true;
-            this.comboBoxreturninvoiceno.Location = new System.Drawing.Point(118, 72);
-            this.comboBoxreturninvoiceno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxreturninvoiceno.Location = new System.Drawing.Point(157, 89);
+            this.comboBoxreturninvoiceno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxreturninvoiceno.Name = "comboBoxreturninvoiceno";
-            this.comboBoxreturninvoiceno.Size = new System.Drawing.Size(101, 33);
+            this.comboBoxreturninvoiceno.Size = new System.Drawing.Size(209, 39);
             this.comboBoxreturninvoiceno.TabIndex = 52;
+            this.comboBoxreturninvoiceno.Text = "Select Invoice ID";
             // 
             // currentdate
             // 
             this.currentdate.BackColor = System.Drawing.Color.LightGray;
             this.currentdate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currentdate.Location = new System.Drawing.Point(759, 15);
-            this.currentdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.currentdate.Location = new System.Drawing.Point(1012, 18);
+            this.currentdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.currentdate.Multiline = true;
             this.currentdate.Name = "currentdate";
-            this.currentdate.Size = new System.Drawing.Size(143, 31);
+            this.currentdate.Size = new System.Drawing.Size(191, 38);
             this.currentdate.TabIndex = 53;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(685, 12);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(913, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 28);
+            this.label2.Size = new System.Drawing.Size(80, 36);
             this.label2.TabIndex = 54;
             this.label2.Text = "Today";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -291,11 +281,11 @@
             // delaydates
             // 
             this.delaydates.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.delaydates.Location = new System.Drawing.Point(179, 219);
-            this.delaydates.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.delaydates.Location = new System.Drawing.Point(239, 270);
+            this.delaydates.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delaydates.Multiline = true;
             this.delaydates.Name = "delaydates";
-            this.delaydates.Size = new System.Drawing.Size(124, 31);
+            this.delaydates.Size = new System.Drawing.Size(165, 38);
             this.delaydates.TabIndex = 55;
             this.delaydates.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -303,10 +293,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 220);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(21, 271);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 28);
+            this.label5.Size = new System.Drawing.Size(137, 36);
             this.label5.TabIndex = 56;
             this.label5.Text = "Delay Dates";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -315,73 +304,69 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(20, 358);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(27, 441);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(122, 28);
+            this.label15.Size = new System.Drawing.Size(155, 36);
             this.label15.TabIndex = 57;
             this.label15.Text = "Total Amount";
             // 
             // total
             // 
             this.total.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.total.Location = new System.Drawing.Point(211, 354);
-            this.total.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.total.Location = new System.Drawing.Point(281, 436);
+            this.total.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total.Multiline = true;
             this.total.Name = "total";
-            this.total.Size = new System.Drawing.Size(135, 31);
+            this.total.Size = new System.Drawing.Size(180, 38);
             this.total.TabIndex = 62;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(83, 391);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(111, 481);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 28);
+            this.label14.Size = new System.Drawing.Size(68, 36);
             this.label14.TabIndex = 58;
             this.label14.Text = "Cash";
             // 
             // txtcash
             // 
             this.txtcash.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcash.Location = new System.Drawing.Point(211, 389);
-            this.txtcash.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcash.Location = new System.Drawing.Point(281, 479);
+            this.txtcash.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcash.Multiline = true;
             this.txtcash.Name = "txtcash";
-            this.txtcash.Size = new System.Drawing.Size(135, 31);
+            this.txtcash.Size = new System.Drawing.Size(180, 38);
             this.txtcash.TabIndex = 60;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(62, 460);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(83, 566);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 28);
+            this.label13.Size = new System.Drawing.Size(99, 36);
             this.label13.TabIndex = 59;
             this.label13.Text = "Balance";
             // 
             // textbalance
             // 
             this.textbalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbalance.Location = new System.Drawing.Point(211, 458);
-            this.textbalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textbalance.Location = new System.Drawing.Point(281, 564);
+            this.textbalance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textbalance.Multiline = true;
             this.textbalance.Name = "textbalance";
-            this.textbalance.Size = new System.Drawing.Size(133, 31);
+            this.textbalance.Size = new System.Drawing.Size(177, 38);
             this.textbalance.TabIndex = 61;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(169, 358);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(225, 441);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 28);
+            this.label8.Size = new System.Drawing.Size(49, 36);
             this.label8.TabIndex = 63;
             this.label8.Text = "Rs .";
             // 
@@ -389,10 +374,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(169, 392);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(225, 482);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 28);
+            this.label6.Size = new System.Drawing.Size(49, 36);
             this.label6.TabIndex = 64;
             this.label6.Text = "Rs .";
             // 
@@ -400,19 +384,18 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(169, 462);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(225, 569);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 28);
+            this.label7.Size = new System.Drawing.Size(49, 36);
             this.label7.TabIndex = 65;
             this.label7.Text = "Rs .";
             // 
             // delaytotalbtn
             // 
-            this.delaytotalbtn.Location = new System.Drawing.Point(20, 310);
-            this.delaytotalbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.delaytotalbtn.Location = new System.Drawing.Point(27, 382);
+            this.delaytotalbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delaytotalbtn.Name = "delaytotalbtn";
-            this.delaytotalbtn.Size = new System.Drawing.Size(364, 32);
+            this.delaytotalbtn.Size = new System.Drawing.Size(485, 39);
             this.delaytotalbtn.TabIndex = 68;
             this.delaytotalbtn.Text = "Calculate Total Amount";
             this.delaytotalbtn.UseVisualStyleBackColor = true;
@@ -420,10 +403,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(20, 423);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(27, 521);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(364, 32);
+            this.button3.Size = new System.Drawing.Size(485, 39);
             this.button3.TabIndex = 69;
             this.button3.Text = "Calculate Balance";
             this.button3.UseVisualStyleBackColor = true;
@@ -433,10 +416,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(346, 358);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(461, 441);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 28);
+            this.label4.Size = new System.Drawing.Size(46, 36);
             this.label4.TabIndex = 72;
             this.label4.Text = ".00";
             // 
@@ -444,10 +426,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(346, 392);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(461, 482);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(36, 28);
+            this.label11.Size = new System.Drawing.Size(46, 36);
             this.label11.TabIndex = 73;
             this.label11.Text = ".00";
             // 
@@ -455,10 +436,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(345, 462);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(460, 569);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 28);
+            this.label12.Size = new System.Drawing.Size(46, 36);
             this.label12.TabIndex = 74;
             this.label12.Text = ".00";
             // 
@@ -479,8 +459,8 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvreturn.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvreturn.GridColor = System.Drawing.Color.Black;
-            this.dgvreturn.Location = new System.Drawing.Point(438, 176);
-            this.dgvreturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvreturn.Location = new System.Drawing.Point(584, 217);
+            this.dgvreturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvreturn.Name = "dgvreturn";
             this.dgvreturn.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -495,7 +475,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvreturn.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvreturn.RowTemplate.Height = 24;
-            this.dgvreturn.Size = new System.Drawing.Size(464, 522);
+            this.dgvreturn.Size = new System.Drawing.Size(619, 642);
             this.dgvreturn.TabIndex = 76;
             this.dgvreturn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvreturn_CellContentClick);
             // 
@@ -545,9 +525,9 @@
             this.pln2.Controls.Add(this.lbl8);
             this.pln2.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pln2.Location = new System.Drawing.Point(0, 0);
-            this.pln2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pln2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pln2.Name = "pln2";
-            this.pln2.Size = new System.Drawing.Size(942, 720);
+            this.pln2.Size = new System.Drawing.Size(1256, 886);
             this.pln2.TabIndex = 2;
             this.pln2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -558,9 +538,10 @@
             this.btnpaid.Font = new System.Drawing.Font("Poppins SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpaid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnpaid.Image = ((System.Drawing.Image)(resources.GetObject("btnpaid.Image")));
-            this.btnpaid.Location = new System.Drawing.Point(20, 514);
+            this.btnpaid.Location = new System.Drawing.Point(27, 633);
+            this.btnpaid.Margin = new System.Windows.Forms.Padding(4);
             this.btnpaid.Name = "btnpaid";
-            this.btnpaid.Size = new System.Drawing.Size(153, 53);
+            this.btnpaid.Size = new System.Drawing.Size(204, 65);
             this.btnpaid.TabIndex = 77;
             this.btnpaid.Text = "Paid";
             this.btnpaid.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -575,9 +556,10 @@
             this.button5.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Blue;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(22, 646);
+            this.button5.Location = new System.Drawing.Point(29, 795);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(363, 52);
+            this.button5.Size = new System.Drawing.Size(484, 64);
             this.button5.TabIndex = 75;
             this.button5.Text = "Delete Customer Details";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -592,9 +574,10 @@
             this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(279, 514);
+            this.button4.Location = new System.Drawing.Point(372, 633);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 53);
+            this.button4.Size = new System.Drawing.Size(139, 65);
             this.button4.TabIndex = 71;
             this.button4.Text = "Delete";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -609,9 +592,10 @@
             this.btnprint.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.ForeColor = System.Drawing.Color.Red;
             this.btnprint.Image = ((System.Drawing.Image)(resources.GetObject("btnprint.Image")));
-            this.btnprint.Location = new System.Drawing.Point(20, 582);
+            this.btnprint.Location = new System.Drawing.Point(27, 716);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(4);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(364, 58);
+            this.btnprint.Size = new System.Drawing.Size(485, 71);
             this.btnprint.TabIndex = 70;
             this.btnprint.Text = "Print Invoice";
             this.btnprint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -626,9 +610,10 @@
             this.button1.Font = new System.Drawing.Font("Poppins SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(179, 514);
+            this.button1.Location = new System.Drawing.Point(239, 633);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 53);
+            this.button1.Size = new System.Drawing.Size(127, 65);
             this.button1.TabIndex = 67;
             this.button1.Text = "Clear";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -638,13 +623,13 @@
             // 
             // returncar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pln2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "returncar";
-            this.Size = new System.Drawing.Size(942, 720);
+            this.Size = new System.Drawing.Size(1256, 886);
             this.Load += new System.EventHandler(this.returncar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvreturn)).EndInit();
             this.pln2.ResumeLayout(false);

@@ -16,7 +16,7 @@ namespace CarRentalSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CommonUI.Login());
+            Application.Run(new CommonUI.Splash());
         }
     }
 }

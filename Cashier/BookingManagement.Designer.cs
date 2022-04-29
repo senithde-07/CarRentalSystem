@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtrentcarname = new System.Windows.Forms.TextBox();
             this.btncashierDELETE = new System.Windows.Forms.Button();
             this.btncashierUPDATE = new System.Windows.Forms.Button();
             this.btncashierCLEAR = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.lblselcar = new System.Windows.Forms.Label();
             this.lbl11 = new System.Windows.Forms.Label();
             this.dgvrental = new System.Windows.Forms.DataGridView();
-            this.txtrentcarname = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvrental)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +84,15 @@
             this.panel1.Size = new System.Drawing.Size(1256, 445);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtrentcarname
+            // 
+            this.txtrentcarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtrentcarname.Location = new System.Drawing.Point(236, 280);
+            this.txtrentcarname.Multiline = true;
+            this.txtrentcarname.Name = "txtrentcarname";
+            this.txtrentcarname.Size = new System.Drawing.Size(277, 38);
+            this.txtrentcarname.TabIndex = 28;
             // 
             // btncashierDELETE
             // 
@@ -166,6 +175,7 @@
             this.comboBoxselcustomer.Name = "comboBoxselcustomer";
             this.comboBoxselcustomer.Size = new System.Drawing.Size(278, 39);
             this.comboBoxselcustomer.TabIndex = 20;
+            this.comboBoxselcustomer.Text = "Select Customer";
             // 
             // comboBoxselcar
             // 
@@ -174,6 +184,7 @@
             this.comboBoxselcar.Name = "comboBoxselcar";
             this.comboBoxselcar.Size = new System.Drawing.Size(278, 39);
             this.comboBoxselcar.TabIndex = 19;
+            this.comboBoxselcar.Text = "Select Car ID";
             // 
             // lblreturndate
             // 
@@ -285,43 +296,34 @@
             this.dgvrental.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvrental.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvrental.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.NullValue = null;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvrental.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvrental.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvrental.GridColor = System.Drawing.Color.Black;
             this.dgvrental.Location = new System.Drawing.Point(130, 462);
             this.dgvrental.Name = "dgvrental";
             this.dgvrental.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvrental.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvrental.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvrental.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvrental.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvrental.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvrental.RowTemplate.Height = 24;
             this.dgvrental.Size = new System.Drawing.Size(1002, 408);
             this.dgvrental.TabIndex = 8;
             this.dgvrental.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvrental_CellContentClick);
-            // 
-            // txtrentcarname
-            // 
-            this.txtrentcarname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtrentcarname.Location = new System.Drawing.Point(236, 280);
-            this.txtrentcarname.Multiline = true;
-            this.txtrentcarname.Name = "txtrentcarname";
-            this.txtrentcarname.Size = new System.Drawing.Size(277, 38);
-            this.txtrentcarname.TabIndex = 28;
             // 
             // BookingManagement
             // 
